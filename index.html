@@ -93,6 +93,10 @@
       .grid, .skills { grid-template-columns: 1fr; }
       header.hero { padding-top: 56px; }
     }
+    .videos { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; align-items: start; }
+    .videos .twitter-tweet { margin: 0 !important; }
+    .videos blockquote { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px; margin: 0; color: var(--muted); }
+    @media (max-width: 760px) { .videos { grid-template-columns: 1fr; } }
   </style>
 </head>
 <body>
@@ -101,6 +105,7 @@
       <a class="brand" href="#">Jonathan Lathrop</a>
       <ul>
         <li><a href="#work">Work</a></li>
+        <li><a href="#videos">Videos</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -223,6 +228,17 @@
     </div>
   </section>
 
+  <section id="videos">
+    <div class="wrap">
+      <h2>Watch it in action</h2>
+      <p class="sub">Gameplay clips and build updates I post on <a href="https://x.com/DarthJML">X @DarthJML</a>.</p>
+      <div class="videos">
+        <blockquote class="twitter-tweet" data-theme="dark" data-dnt="true"><a href="https://x.com/DarthJML/status/2113665511825326271">Watch the video on X →</a></blockquote>
+        <blockquote class="twitter-tweet" data-theme="dark" data-dnt="true"><a href="https://x.com/DarthJML/status/2110065735758160025">Watch the video on X →</a></blockquote>
+      </div>
+    </div>
+  </section>
+
   <section id="skills">
     <div class="wrap">
       <h2>What I work with</h2>
@@ -268,5 +284,6 @@
   <footer>
     <div class="wrap">Hand-built with plain HTML and CSS · Hosted on GitHub Pages</div>
   </footer>
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </body>
 </html>
