@@ -93,10 +93,9 @@
       .grid, .skills { grid-template-columns: 1fr; }
       header.hero { padding-top: 56px; }
     }
-    .videos { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; align-items: start; }
+    .videos { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; align-items: start; }
     .videos .twitter-tweet { margin: 0 !important; }
     .videos blockquote { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px; margin: 0; color: var(--muted); }
-    @media (max-width: 760px) { .videos { grid-template-columns: 1fr; } }
   </style>
 </head>
 <body>
@@ -235,6 +234,7 @@
       <div class="videos">
         <blockquote class="twitter-tweet" data-theme="dark" data-dnt="true"><a href="https://x.com/DarthJML/status/2113665511825326271">Watch the video on X →</a></blockquote>
         <blockquote class="twitter-tweet" data-theme="dark" data-dnt="true"><a href="https://x.com/DarthJML/status/2110065735758160025">Watch the video on X →</a></blockquote>
+        <blockquote class="twitter-tweet" data-theme="dark" data-dnt="true"><a href="https://x.com/DarthJML/status/2106093057477349790">Watch the video on X →</a></blockquote>
       </div>
     </div>
   </section>
